@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dannycomic.github.io/danny-comic/sitemap.xml
