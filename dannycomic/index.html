@@ -1,25 +1,1882 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danny Comic | Official Website</title>
-  <meta name="description" content="Welcome to Danny Comic — stories, characters, comic art and entertainment.">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;line-height:1.6}
-    nav{position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(11,11,11,.96);border-bottom:3px solid #f4c400}.logo{color:#f4c400;font-size:26px;font-weight:900;letter-spacing:-1px}nav ul{display:flex;gap:28px;list-style:none}nav a{color:#fff;text-decoration:none;font-weight:bold;transition:.2s}nav a:hover{color:#f4c400}
-    .hero{min-height:90vh;display:flex;align-items:center;padding:90px 7%;background:radial-gradient(circle at 80% 25%,#4a2900 0%,#191000 25%,#0b0b0b 55%)}.hero-content{max-width:850px}.tag{display:inline-block;padding:8px 16px;background:#e52b20;font-weight:900;text-transform:uppercase;transform:skew(-8deg)}.hero h1{margin-top:25px;font-size:clamp(60px,11vw,130px);line-height:.82;font-weight:1000;letter-spacing:-7px;text-transform:uppercase;color:#fff;text-shadow:7px 7px 0 #e52b20,12px 12px 0 #f4c400}.hero p{max-width:650px;margin-top:35px;color:#ddd;font-size:20px}.button{display:inline-block;margin-top:28px;padding:15px 24px;background:#f4c400;color:#111;text-decoration:none;font-weight:900;border:3px solid #111;box-shadow:7px 7px 0 #e52b20;transition:.2s}.button:hover{transform:translate(4px,4px);box-shadow:3px 3px 0 #e52b20}
-    section{padding:90px 7%}.section-title{margin-bottom:45px;font-size:clamp(40px,6vw,65px);line-height:1;text-transform:uppercase;font-weight:1000}.comics{background:#eeeeea;color:#111}.comic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.comic-card{background:#fff;border:4px solid #111;box-shadow:9px 9px 0 #e52b20;overflow:hidden;transition:.2s}.comic-card:hover{transform:translateY(-8px)}.comic-image{height:250px;display:flex;align-items:center;justify-content:center;background:radial-gradient(#111 1px,transparent 1px);background-size:10px 10px;background-color:#f4c400;color:#111;font-size:65px;font-weight:1000}.comic-info{padding:24px}.comic-info h3{margin-bottom:8px;font-size:26px;text-transform:uppercase}.comic-info p{color:#555}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:70px;background:#f4c400;color:#111}.about h2{font-size:clamp(50px,7vw,90px);line-height:.9;text-transform:uppercase;font-weight:1000}.about-text{font-size:19px}.contact{text-align:center;background:#e52b20}.contact h2{font-size:clamp(45px,7vw,80px);line-height:.9;text-transform:uppercase;font-weight:1000}.contact p{margin-top:20px;font-size:19px}.contact .button{background:#fff}footer{display:flex;justify-content:space-between;align-items:center;padding:30px 7%;background:#050505;color:#999}footer strong{color:#f4c400}
-    @media(max-width:800px){nav{padding:16px 5%}nav ul{gap:12px}nav a{font-size:13px}.hero{padding:70px 5%}.hero h1{font-size:68px}section{padding:65px 5%}.comic-grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}footer{flex-direction:column;gap:10px;text-align:center}}
-  </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Danny Comic | Official Website</title>
+
+<meta name="description"
+      content="Danny Comic — comics, characters, creativity, artwork and entertainment.">
+
+
+<style>
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #080808;
+
+    color: white;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 6%;
+
+    background: #080808;
+
+    border-bottom: 4px solid #f4c400;
+}
+
+
+/* =========================================================
+   SMALL DANNY COMIC LOGO
+========================================================= */
+
+.brand-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.brand-mark {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e52b20;
+
+    border: 3px solid white;
+
+    transform: skew(-6deg) rotate(-3deg);
+
+    box-shadow: 5px 5px 0 #f4c400;
+
+}
+
+
+.brand-mark-inner {
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    letter-spacing: -2px;
+
+    text-shadow: 2px 2px 0 #111;
+
+}
+
+
+.brand-name {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: .85;
+}
+
+
+.brand-name span {
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.brand-name strong {
+
+    color: #f4c400;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    text-shadow: 2px 2px 0 #e52b20;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+nav ul {
+
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .2s;
+}
+
+
+nav a:hover {
+
+    color: #f4c400;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 6%;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 30%,
+            #633700 0%,
+            #181000 35%,
+            #080808 70%
+        );
+
+    overflow: hidden;
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   WELCOME TAG
+========================================================= */
+
+.tag {
+
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    background: #e52b20;
+
+    color: white;
+
+    font-weight: 900;
+
+    border: 3px solid #111;
+
+    transform: skew(-8deg);
+
+    box-shadow: 5px 5px 0 #f4c400;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.hero h1 {
+
+    margin-top: 28px;
+
+    font-size: clamp(60px, 10vw, 125px);
+
+    line-height: .82;
+
+    letter-spacing: -7px;
+
+    text-transform: uppercase;
+
+    font-weight: 1000;
+
+    text-shadow:
+
+        7px 7px 0 #e52b20,
+
+        14px 14px 0 #f4c400;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero p {
+
+    max-width: 520px;
+
+    margin-top: 28px;
+
+    color: #d5d5d5;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 15px 24px;
+
+    background: #f4c400;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    border: 3px solid #111;
+
+    box-shadow: 7px 7px 0 #e52b20;
+
+    transition: .2s;
+}
+
+
+.button:hover {
+
+    transform: translate(4px, 4px);
+
+    box-shadow: 3px 3px 0 #e52b20;
+}
+
+
+/* =========================================================
+   BIG MODERN LOGO
+========================================================= */
+
+.fashion-logo {
+
+    width: 390px;
+
+    height: 390px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #e52b20 0%,
+            #b81710 45%,
+            #680b08 100%
+        );
+
+    border: 5px solid white;
+
+    transform: rotate(-5deg);
+
+    box-shadow:
+
+        15px 15px 0 #f4c400,
+
+        28px 28px 0 #111;
+
+    overflow: hidden;
+}
+
+
+/* GOLD CIRCLE */
+
+.logo-ring {
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border: 3px solid #f4c400;
+
+    border-radius: 50%;
+}
+
+
+.logo-ring:after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    top: 22px;
+
+    left: 22px;
+
+    border: 1px solid white;
+
+    border-radius: 50%;
+
+    opacity: .5;
+}
+
+
+/* DIAMOND */
+
+.logo-diamond {
+
+    position: absolute;
+
+    width: 245px;
+
+    height: 245px;
+
+    border: 2px solid #f4c400;
+
+    transform: rotate(45deg);
+
+    opacity: .35;
+}
+
+
+/* =========================================================
+   DC LOGO
+   ALGERIAN FONT
+========================================================= */
+
+.logo-dc {
+
+    position: relative;
+
+    z-index: 5;
+
+    color: white;
+
+    font-family:
+
+        Algerian,
+
+        "Algerian Regular",
+
+        Georgia,
+
+        serif;
+
+    font-size: 125px;
+
+    font-weight: normal;
+
+    letter-spacing: -8px;
+
+    line-height: .8;
+
+    text-shadow:
+
+        5px 5px 0 #111;
+}
+
+
+/* LOGO LINE */
+
+.logo-line {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 125px;
+
+    height: 5px;
+
+    margin-top: 18px;
+
+    background: #f4c400;
+
+    box-shadow: 0 0 10px #f4c400;
+}
+
+
+/* LOGO NAME */
+
+.logo-name {
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 13px;
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 1000;
+
+    letter-spacing: 4px;
+
+    text-shadow: 2px 2px 0 #111;
+}
+
+
+/* LOGO TAGLINE */
+
+.logo-tagline {
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 8px;
+
+    color: #f4c400;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+
+    padding: 90px 6%;
+}
+
+
+.section-title {
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: .9;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+    font-weight: 1000;
+}
+
+
+.section-description {
+
+    max-width: 720px;
+
+    margin-bottom: 45px;
+
+    font-size: 18px;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   FEATURED COMICS
+========================================================= */
+
+.comics {
+
+    background: #eeeeea;
+
+    color: #111;
+}
+
+
+.comic-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+.card {
+
+    background: white;
+
+    border: 4px solid #111;
+
+    box-shadow: 9px 9px 0 #e52b20;
+
+    overflow: hidden;
+
+    transition: .25s;
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.card-image {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.card-info {
+
+    padding: 24px;
+}
+
+
+.card-info h3 {
+
+    font-size: 25px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+
+.card-info p {
+
+    color: #555;
+}
+
+
+/* =========================================================
+   PORTFOLIO
+========================================================= */
+
+.portfolio {
+
+    background: #101010;
+
+    color: white;
+}
+
+
+.portfolio .section-description {
+
+    color: #aaa;
+}
+
+
+.portfolio-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+.portfolio-card {
+
+    background: white;
+
+    color: #111;
+
+    border: 4px solid #f4c400;
+
+    box-shadow: 8px 8px 0 #e52b20;
+
+    overflow: hidden;
+
+    transition: .25s;
+}
+
+
+.portfolio-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.portfolio-card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.portfolio-card .card-info {
+
+    padding: 20px;
+}
+
+
+.portfolio-card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns:
+
+        1fr 1fr;
+
+    gap: 70px;
+
+    background: #f4c400;
+
+    color: #111;
+}
+
+
+.about h2 {
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: .85;
+
+    text-transform: uppercase;
+
+    font-weight: 1000;
+}
+
+
+.about-text {
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+
+    text-align: center;
+
+    background: #e52b20;
+}
+
+
+.contact h2 {
+
+    font-size: clamp(45px, 7vw, 80px);
+
+    line-height: .9;
+
+    text-transform: uppercase;
+
+    font-weight: 1000;
+}
+
+
+.contact p {
+
+    margin-top: 20px;
+
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   SOCIAL BUTTONS
+========================================================= */
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.social-button {
+
+    display: inline-block;
+
+    padding: 14px 20px;
+
+    background: white;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    border: 3px solid #111;
+
+    box-shadow: 5px 5px 0 #f4c400;
+
+    transition: .2s;
+}
+
+
+.social-button:hover {
+
+    transform: translate(3px, 3px);
+
+    box-shadow: 2px 2px 0 #f4c400;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 6%;
+
+    background: #050505;
+
+    color: #888;
+}
+
+
+footer strong {
+
+    color: #f4c400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .fashion-logo {
+
+        width: 310px;
+
+        height: 310px;
+    }
+
+
+    .logo-ring {
+
+        width: 240px;
+
+        height: 240px;
+    }
+
+
+    .logo-ring:after {
+
+        width: 195px;
+
+        height: 195px;
+
+        top: 21px;
+
+        left: 21px;
+    }
+
+
+    .logo-diamond {
+
+        width: 200px;
+
+        height: 200px;
+    }
+
+
+    .logo-dc {
+
+        font-size: 105px;
+    }
+
+
+    .logo-name {
+
+        font-size: 19px;
+    }
+
+
+    .portfolio-grid {
+
+        grid-template-columns:
+
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    nav {
+
+        padding: 14px 4%;
+    }
+
+
+    nav ul {
+
+        gap: 10px;
+    }
+
+
+    nav a {
+
+        font-size: 11px;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        justify-content: center;
+
+        padding: 70px 5%;
+
+        gap: 60px;
+    }
+
+
+    .hero p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .fashion-logo {
+
+        width: 280px;
+
+        height: 280px;
+
+        margin: 20px 0 30px 0;
+
+        box-shadow:
+
+            12px 12px 0 #f4c400,
+
+            20px 20px 0 #111;
+    }
+
+
+    .logo-ring {
+
+        width: 215px;
+
+        height: 215px;
+    }
+
+
+    .logo-ring:after {
+
+        width: 175px;
+
+        height: 175px;
+
+        top: 18px;
+
+        left: 18px;
+    }
+
+
+    .logo-diamond {
+
+        width: 175px;
+
+        height: 175px;
+    }
+
+
+    .logo-dc {
+
+        font-size: 90px;
+    }
+
+
+    .logo-name {
+
+        font-size: 17px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .logo-tagline {
+
+        font-size: 7px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 70px;
+
+        letter-spacing: -5px;
+    }
+
+
+    section {
+
+        padding: 65px 5%;
+    }
+
+
+    .comic-grid,
+
+    .portfolio-grid,
+
+    .about {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .social-links {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .social-button {
+
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    nav ul {
+
+        display: none;
+    }
+
+
+    .fashion-logo {
+
+        width: 220px;
+
+        height: 220px;
+
+        border-width: 4px;
+
+        box-shadow:
+
+            10px 10px 0 #f4c400,
+
+            17px 17px 0 #111;
+    }
+
+
+    .logo-ring {
+
+        width: 170px;
+
+        height: 170px;
+    }
+
+
+    .logo-ring:after {
+
+        width: 135px;
+
+        height: 135px;
+
+        top: 17px;
+
+        left: 17px;
+    }
+
+
+    .logo-diamond {
+
+        width: 140px;
+
+        height: 140px;
+    }
+
+
+    .logo-dc {
+
+        font-size: 70px;
+    }
+
+
+    .logo-line {
+
+        width: 85px;
+
+        height: 3px;
+
+        margin-top: 12px;
+    }
+
+
+    .logo-name {
+
+        font-size: 13px;
+
+        letter-spacing: 2px;
+
+        margin-top: 9px;
+    }
+
+
+    .logo-tagline {
+
+        font-size: 5px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 58px;
+    }
+
+}
+
+</style>
+
 </head>
+
+
 <body>
-  <nav><div class="logo">DANNY COMIC</div><ul><li><a href="#home">Home</a></li><li><a href="#comics">Comics</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-  <header class="hero" id="home"><div class="hero-content"><span class="tag">Welcome to</span><h1>Danny<br>Comic</h1><p>Welcome to the official home of Danny Comic — a world of stories, characters, creativity, comic art and entertainment.</p><a class="button" href="#comics">Explore the Comics →</a></div></header>
-  <section class="comics" id="comics"><h2 class="section-title">Featured Comics</h2><div class="comic-grid"><article class="comic-card"><div class="comic-image">01</div><div class="comic-info"><h3>New Adventures</h3><p>Discover new stories, characters and adventures from the Danny Comic universe.</p></div></article><article class="comic-card"><div class="comic-image">02</div><div class="comic-info"><h3>Comic Collection</h3><p>Explore illustrations, comic panels, artwork and creative projects.</p></div></article><article class="comic-card"><div class="comic-image">03</div><div class="comic-info"><h3>Coming Soon</h3><p>New Danny Comic projects and stories are coming soon.</p></div></article></div></section>
-  <section class="about" id="about"><div><h2>Every Panel Tells A Story.</h2></div><div class="about-text"><p>Danny Comic is a creative world built around stories, characters, imagination and comic art.</p><br><p>This is where fans can discover new comics, explore artwork and follow the latest adventures from Danny Comic.</p><a class="button" href="#contact">Work With Danny →</a></div></section>
-  <section class="contact" id="contact"><h2>Let's Create Something Epic.</h2><p>Have an idea, project or collaboration? Get in touch with Danny Comic.</p><a class="button" href="mailto:hello@dannycomic.com">Contact Danny →</a></section>
-  <footer><strong>DANNY COMIC</strong><span>© 2026 Danny Comic. All rights reserved.</span></footer>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav>
+
+
+    <div class="brand-logo">
+
+
+        <div class="brand-mark">
+
+            <div class="brand-mark-inner">
+
+                DC
+
+            </div>
+
+        </div>
+
+
+        <div class="brand-name">
+
+            <span>DANNY</span>
+
+            <strong>COMIC</strong>
+
+        </div>
+
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="#home">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#comics">
+                Comics
+            </a>
+        </li>
+
+        <li>
+            <a href="#portfolio">
+                Portfolio
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero" id="home">
+
+
+    <div class="hero-content">
+
+
+        <span class="tag">
+
+            WELCOME TO
+
+        </span>
+
+
+        <h1>
+
+            DANNY<br>
+
+            COMIC
+
+        </h1>
+
+
+        <p>
+
+            Welcome to the official home of Danny Comic —
+            a world of comics, characters, creativity,
+            artwork and entertainment.
+
+        </p>
+
+
+        <a class="button"
+           href="#comics">
+
+            Explore The Comics →
+
+        </a>
+
+
+    </div>
+
+
+
+    <!-- BIG LOGO -->
+
+    <div class="fashion-logo">
+
+
+        <div class="logo-ring"></div>
+
+
+        <div class="logo-diamond"></div>
+
+
+        <div class="logo-dc">
+
+            DC
+
+        </div>
+
+
+        <div class="logo-line"></div>
+
+
+        <div class="logo-name">
+
+            DANNY COMIC
+
+        </div>
+
+
+        <div class="logo-tagline">
+
+            CREATE • INSPIRE • ENTERTAIN
+
+        </div>
+
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =========================================================
+     FEATURED COMICS
+========================================================= -->
+
+<section class="comics"
+         id="comics">
+
+
+    <h2 class="section-title">
+
+        Featured Comics
+
+    </h2>
+
+
+    <p class="section-description">
+
+        Discover comics, creative work,
+        digital art and visual storytelling.
+
+    </p>
+
+
+    <div class="comic-grid">
+
+
+        <!-- COMIC 1 -->
+
+        <article class="card">
+
+
+            <img
+                class="card-image"
+                src="images/comic.jpg"
+                alt="Danny Comic artwork"
+            >
+
+
+            <div class="card-info">
+
+
+                <h3>
+
+                    Comic Adventures
+
+                </h3>
+
+
+                <p>
+
+                    Explore stories, characters
+                    and exciting comic adventures.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- COMIC 2 -->
+
+        <article class="card">
+
+
+            <img
+                class="card-image"
+                src="images/content.jpg"
+                alt="Content creation"
+            >
+
+
+            <div class="card-info">
+
+
+                <h3>
+
+                    Content Creation
+
+                </h3>
+
+
+                <p>
+
+                    Creative content, artwork,
+                    storytelling and entertainment.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- COMIC 3 -->
+
+        <article class="card">
+
+
+            <img
+                class="card-image"
+                src="images/design.jpg"
+                alt="Graphic design"
+            >
+
+
+            <div class="card-info">
+
+
+                <h3>
+
+                    Creative Design
+
+                </h3>
+
+
+                <p>
+
+                    Modern design and visual
+                    creativity from Danny Comic.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PORTFOLIO
+========================================================= -->
+
+<section class="portfolio"
+         id="portfolio">
+
+
+    <h2 class="section-title">
+
+        Portfolio
+
+    </h2>
+
+
+    <p class="section-description">
+
+        A collection of artwork, designs,
+        creative projects and comic inspiration.
+
+    </p>
+
+
+    <div class="portfolio-grid">
+
+
+        <article class="portfolio-card">
+
+
+            <img
+                src="images/artwork.jpg"
+                alt="Artwork"
+            >
+
+
+            <div class="card-info">
+
+                <h3>
+
+                    Artwork
+
+                </h3>
+
+                <p>
+
+                    Creative artwork and illustration.
+
+                </p>
+
+            </div>
+
+
+        </article>
+
+
+
+        <article class="portfolio-card">
+
+
+            <img
+                src="images/studio.jpg"
+                alt="Creative studio"
+            >
+
+
+            <div class="card-info">
+
+                <h3>
+
+                    Creative Studio
+
+                </h3>
+
+                <p>
+
+                    Ideas becoming creative projects.
+
+                </p>
+
+            </div>
+
+
+        </article>
+
+
+
+        <article class="portfolio-card">
+
+
+            <img
+                src="images/portfolio1.jpg"
+                alt="Creative design"
+            >
+
+
+            <div class="card-info">
+
+                <h3>
+
+                    Digital Design
+
+                </h3>
+
+                <p>
+
+                    Modern digital creative work.
+
+                </p>
+
+            </div>
+
+
+        </article>
+
+
+
+        <article class="portfolio-card">
+
+
+            <img
+                src="images/portfolio2.jpg"
+                alt="Comic project"
+            >
+
+
+            <div class="card-info">
+
+                <h3>
+
+                    Comic Project
+
+                </h3>
+
+                <p>
+
+                    Stories and characters in development.
+
+                </p>
+
+            </div>
+
+
+        </article>
+
+
+
+        <article class="portfolio-card">
+
+
+            <img
+                src="images/portfolio3.jpg"
+                alt="Creative project"
+            >
+
+
+            <div class="card-info">
+
+                <h3>
+
+                    Creative Projects
+
+                </h3>
+
+                <p>
+
+                    More Danny Comic projects.
+
+                </p>
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about"
+         id="about">
+
+
+    <div>
+
+
+        <h2>
+
+            EVERY PANEL<br>
+
+            TELLS A STORY.
+
+        </h2>
+
+
+    </div>
+
+
+    <div class="about-text">
+
+
+        <p>
+
+            Danny Comic is a creative world
+            built around stories, characters,
+            imagination and comic art.
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            This website is the home for comics,
+            artwork, creative projects, characters
+            and future adventures.
+
+        </p>
+
+
+        <a class="button"
+           href="#contact">
+
+            Work With Danny →
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact"
+         id="contact">
+
+
+    <h2>
+
+        LET'S CREATE<br>
+
+        SOMETHING EPIC.
+
+    </h2>
+
+
+    <p>
+
+        Have an idea, project or collaboration?
+        Get in touch with Danny Comic.
+
+    </p>
+
+
+
+    <div class="social-links">
+
+
+        <!-- WHATSAPP -->
+
+        <a
+            class="social-button"
+            href="https://wa.me/2348080380485"
+            target="_blank">
+
+            WhatsApp
+
+        </a>
+
+
+
+        <!-- EMAIL -->
+
+        <a
+            class="social-button"
+            href="mailto:dannycomic2010@gmail.com">
+
+            Email
+
+        </a>
+
+
+
+        <!-- TIKTOK -->
+
+        <a
+            class="social-button"
+            href="https://www.tiktok.com/@dannycomic6"
+            target="_blank">
+
+            TikTok
+
+        </a>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            class="social-button"
+            href="https://www.instagram.com/dannycomic2010"
+            target="_blank">
+
+            Instagram
+
+        </a>
+
+
+
+        <!-- FACEBOOK -->
+
+        <a
+            class="social-button"
+            href="https://www.facebook.com/dannycomic2010"
+            target="_blank">
+
+            Facebook
+
+        </a>
+
+
+    </div>
+
+
+
+    <a
+        class="button"
+        href="mailto:dannycomic2010@gmail.com">
+
+        Contact Danny →
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+
+    <strong>
+
+        DANNY COMIC
+
+    </strong>
+
+
+    <span>
+
+        © 2026 Danny Comic.
+        All rights reserved.
+
+    </span>
+
+
+</footer>
+
+
+
 </body>
+
 </html>
