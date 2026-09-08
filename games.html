@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>NEXUS Gaming Arcade</title>
+<title>Danny & Mabzy Games</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#070707;color:#fff}nav{padding:18px 7%;background:#111;border-bottom:2px solid orange;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}.logo{color:orange;font-size:27px;font-weight:900}nav a{color:#fff;text-decoration:none;margin-left:20px}.hero{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#111,#291700)}h1{font-size:60px;color:orange;margin:0 0 15px}.hero p{font-size:19px;color:#ddd}.games{padding:55px 7%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#151515;border:1px solid #333;border-radius:12px;padding:28px;text-align:center}.card:hover{border-color:orange;transform:translateY(-5px)}.icon{font-size:55px}.card h2{color:orange}.play,.back{background:orange;border:0;padding:12px 25px;font-weight:bold;border-radius:6px;cursor:pointer}.area{display:none;text-align:center;padding:45px 15px;background:#101010}.area h2{color:orange;font-size:34px}.score{font-size:22px;margin:15px}canvas{max-width:100%;border:3px solid orange;background:#111}.message{color:orange;font-size:19px;margin:15px}footer{text-align:center;padding:30px;background:#111;border-top:2px solid orange}@media(max-width:600px){h1{font-size:42px}nav{padding:15px}.games{padding:35px 5%}}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#070707;color:#fff}nav{padding:18px 7%;background:#111;border-bottom:2px solid orange;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}.logo{color:orange;font-size:27px;font-weight:900}nav a{color:#fff;text-decoration:none;margin-left:20px}.hero{text-align:center;padding:70px 20px;background:linear-gradient(135deg,#111,#291700)}h1{font-size:60px;color:orange;margin:0 0 15px}.hero p{font-size:19px;color:#ddd}.games{padding:55px 7%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#151515;border:1px solid #333;border-radius:12px;padding:28px;text-align:center}.card:hover{border-color:orange;transform:translateY(-5px)}.icon{font-size:55px}.card h2{color:orange}.play,.back{background:orange;border:0;padding:12px 25px;font-weight:bold;border-radius:6px;cursor:pointer}.area{display:none;text-align:center;padding:45px 15px;background:#101010}.area h2{color:orange;font-size:34px}.score{font-size:22px;margin:15px}canvas{max-width:100%;border:3px solid orange;background:#111}.message{color:orange;font-size:19px;margin:15px}footer{text-align:center;padding:30px;background:#111;border-top:2px solid orange}@media(max-width:600px){h1{font-size:42px}nav{padding:15px}.games{padding:35px 5%}}
 </style>
 </head>
 <body>
-<nav><div class="logo">NEXUS 🎮</div><div><a href="index.html">HOME</a><a href="#games">GAMES</a></div></nav>
-<header class="hero"><h1>GAME ARCADE</h1><p>Choose a game and start playing instantly.</p></header>
+<nav><div class="logo">DANNY & MABZY 🎮</div><div><a href="index.html">HOME</a><a href="#games">GAMES</a></div></nav>
+<header class="hero"><h1>DANNY & MABZY GAMES</h1><p>Choose a game and start playing instantly.</p></header>
 <section class="games" id="games">
 <div class="card"><div class="icon">🏎️</div><h2>Speed Rush</h2><p>Dodge traffic and survive.</p><button class="play" onclick="start('car')">PLAY</button></div>
 <div class="card"><div class="icon">🐍</div><h2>Snake</h2><p>Eat food and grow.</p><button class="play" onclick="start('snake')">PLAY</button></div>
@@ -20,7 +20,7 @@
 <div class="card"><div class="icon">🧠</div><h2>Memory Match</h2><p>Match the hidden cards.</p><button class="play" onclick="start('memory')">PLAY</button></div>
 </section>
 <section class="area" id="area"><h2 id="title">GAME</h2><div class="score" id="score">Score: 0</div><canvas id="c" width="500" height="500"></canvas><div class="message" id="msg"></div><button class="back" onclick="location.reload()">BACK TO GAMES</button></section>
-<footer>© 2026 NEXUS Gaming 🎮</footer>
+<footer>© 2026 Danny & Mabzy Games 🎮</footer>
 <script>
 const c=document.getElementById('c'),x=c.getContext('2d');let score=0,raf,keys={};
 document.onkeydown=e=>keys[e.key]=true;document.onkeyup=e=>keys[e.key]=false;
